@@ -42,5 +42,5 @@ jobs:
         run: yarn build
       
       - name: depolying app on surge
-        run: surge ./build http://red-queen-race-by-aliya.surge.sh/ --token ${{ SURGE_TOKEN }}     
+        run: surge ./build http://red-queen-race-by-aliya.surge.sh/ --token ${{SURGE_TOKEN}}     
 

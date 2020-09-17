@@ -53,6 +53,9 @@ const App = () => {
     },
   });
 
+  var sceneries = [foreground1Animation, foreground2Animation, background1Animation, background2Animation];
+
+
   useEffect(() => {
 
     const bg1Animation = background1Animation.getAnimation();
@@ -60,8 +63,6 @@ const App = () => {
 
     const fg1Animation = foreground1Animation.getAnimation();
     fg1Animation.currentTime = fg1Animation.effect.getTiming().duration / 2;
-
-    var sceneries = [foreground1Animation, foreground2Animation, background1Animation, background2Animation];
 
     const redQueen_alice = redQueenalice_Animtion.getAnimation();
 
@@ -98,7 +99,7 @@ const App = () => {
     document.addEventListener("click", goFaster);
     document.addEventListener("touchstart", goFaster);
 
-  }, [foreground1Animation, background1Animation, foreground2Animation, background2Animation]
+  }, [redQueenalice_Animtion, sceneries]
   );
 
 

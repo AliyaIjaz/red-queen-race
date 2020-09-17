@@ -53,16 +53,16 @@ const App = () => {
     },
   });
 
+  // const bg1Animation = background1Animation.getAnimation();
+  // bg1Animation.currentTime = bg1Animation.effect.getTiming().duration / 2;
+
+  // const fg1Animation = foreground1Animation.getAnimation();
+  // fg1Animation.currentTime = fg1Animation.effect.getTiming().duration / 2;
+
   var sceneries = [foreground1Animation, foreground2Animation, background1Animation, background2Animation];
 
 
   useEffect(() => {
-
-    const bg1Animation = background1Animation.getAnimation();
-    bg1Animation.currentTime = bg1Animation.effect.getTiming().duration / 2;
-
-    const fg1Animation = foreground1Animation.getAnimation();
-    fg1Animation.currentTime = fg1Animation.effect.getTiming().duration / 2;
 
     const redQueen_alice = redQueenalice_Animtion.getAnimation();
 
